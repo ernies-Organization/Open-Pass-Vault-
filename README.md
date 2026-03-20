@@ -4,106 +4,82 @@
 
 Open Pass Vault is an **educational, open‑source project**. It is **NOT** an official or professionally audited password manager.
 
-### You must read the following disclaimer:
-- This software is licensed under the **[MIT License](https://github.com/ernies-Organization/Open-Pass-Vault-/blob/main/LICENSE)**.
-- It is provided **AS IS**, with **NO WARRANTY**, **NO GUARANTEE**, and **NO RESPONSIBILITY** for password loss, corruption, security issues, breaches, or any other damage.
+### Please read this carefully:
+- This software is licensed under the **MIT License**.
+- It is provided **AS IS**, with **NO WARRANTY**, **NO GUARANTEE**, and **NO RESPONSIBILITY** for password loss, theft, corruption, or any other damage.
 - By using this software, **you accept full responsibility** for your data.
-- If you require *professional-grade* password security, you should use a trusted, established password manager such as Bitwarden, 1Password, Proton Pass, NordPass, etc.
-- You are free to **modify, inspect, rebuild, and customize** the code as allowed under the MIT License.
+- If you need *professional‑grade* password security, use an official password manager (Bitwarden, Proton Pass, 1Password, NordPass, etc.).
+- You are allowed to **modify, inspect, rebuild, and customize** the code under the MIT License, but you do so at your own risk.
 
 ---
 
-# Open Pass Vault — README
+# Open Pass Vault — README  
 A fully offline, open‑source password manager with advanced multi‑factor authentication.
 
-GitHub Repository: https://github.com/ernies-Organization/Open-Pass-Vault-
+🔗 **Main Script:**  
+**`open_pass_vault.py`**
 
-License: **[MIT License](https://github.com/ernies-Organization/Open-Pass-Vault-/blob/main/LICENSE)**
+🔗 **License:**  
+**MIT License**
 
 ---
 
 ## 📌 Overview
-Open Pass Vault is a privacy‑focused, offline password manager. Your vault and authentication data are stored entirely on your device.
+Open Pass Vault is a privacy‑focused, offline password manager.  
+Everything is stored **locally**, with **zero cloud usage** and **no telemetry**.
 
-All encryption keys are derived using **PBKDF2‑HMAC‑SHA256** with 310,000 iterations and secured using **Fernet symmetric encryption**.
+All vault data is encrypted using:
+- **PBKDF2‑HMAC‑SHA256 (310,000 iterations)**  
+- **Fernet symmetric encryption**
 
-This project is ideal for:
-- Personal learning
-- Offline‑only security setups
-- Users who want a transparent and modifiable password manager
+Open Pass Vault is perfect for:
+- Learning about encryption & authentication
+- Running on offline machines / air‑gapped systems
+- Users who want completely local control
+- Anyone who wants to inspect or modify the code
 
 ---
 
 ## 🔐 Features
-- Fully offline
-- Encrypted password vault (Fernet)
+- Fully offline — NO cloud, NO accounts, NO tracking
+- Encrypted vault (`python_password_manager_vault.bin`)
+- Auth file with encrypted 2FA secrets (`python_password_manager_auth.json`)
 - Multiple offline 2FA methods:
-  - TOTP
-  - HOTP
-  - Backup Codes
-  - Grid Card authentication
-- Password strength checker
+  - **TOTP** (Authenticator apps)
+  - **HOTP** (event‑based)
+  - **Backup Codes** (one‑time use)
+  - **Grid Card Authentication** (coordinate system)
+- Password strength checks
 - Password generator
-- Clipboard copy support
-- Auto‑lock timeout
-- Exportable grid card and backup codes
-- Easily modifiable open‑source code
+- Clipboard copying (if `pyperclip` is installed)
+- Auto‑lock session timeout (10 minutes)
+- Exportable:
+  - Backup codes
+  - Grid card
+- Fully modifiable open‑source Python code
 
 ---
 
-## ⚠️ Security Disclaimer (Extended)
+## ⚠️ Extended Security Disclaimer
 This software is **NOT professionally audited**.
 
-You should NOT rely on this for mission‑critical password storage.
-If you need real security, use an official, vetted password manager.
+If you require reliable, enterprise‑grade, or mission‑critical password security, use a real password manager:
 
-Examples include (non‑exhaustive):
-- Bitwarden
-- 1Password
-- Keeper
-- Proton Pass
-- Dashlane
-- NordPass
+- Bitwarden  
+- Proton Pass  
+- 1Password  
+- Keeper  
+- NordPass  
+- Dashlane  
 
-Open Pass Vault is a **learning tool**, not a certified security product.
+Open Pass Vault is designed for **education and local experimentation**, **NOT** high‑risk or professional use.
 
 ---
 
 ## 🚀 Getting Started
+
 Clone the repository:
+
 ```bash
 git clone https://github.com/ernies-Organization/Open-Pass-Vault-.git
 cd Open-Pass-Vault-
-```
-Run:
-```bash
-python password_manager.py
-```
-
----
-
-## 📦 Dependencies
-Install:
-```bash
-pip install cryptography pyotp qrcode-terminal pyperclip
-```
-
----
-
-## 📝 License
-This software is licensed under the **[MIT License](https://github.com/ernies-Organization/Open-Pass-Vault-/blob/main/LICENSE)**, meaning you may:
-- Use it
-- Modify it
-- Distribute it
-- Sell it
-…as long as you keep the copyright notice.
-
-**The authors provide zero warranty and bear zero responsibility.**
-
----
-
-## ⭐ Final Note
-Open Pass Vault is made to be **open, modifiable, and educational**.
-If you want enterprise‑grade or fully protected password storage, use an official password manager.
-
-Stay safe, encrypt everything, and keep learning. 🔐
