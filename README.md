@@ -12,6 +12,9 @@ Open Pass Vault is an **educational, open‑source project**. It is **NOT** an o
 - You are allowed to **modify, inspect, rebuild, and customize** the code under the MIT License, but you do so at your own risk.
 
 ---
+# Disclaimer
+The content provided herein is intended strictly for educational purposes. Any misuse or abuse of this information that contradicts this purpose, including but not limited to the unauthorized distribution, reproduction, or alteration of content, or the use of information for illicit activities, is strictly prohibited and may constitute a violation of applicable laws and regulations. This could lead to serious consequences including legal action. Educational resources are to be used responsibly, ethically, and with integrity. I reserve the right to restrict access to these resources for anyone found violating these terms. I also reserve the right to change any important information without notice.
+---
 
 # Open Pass Vault — README  
 A fully offline, open‑source password manager with advanced multi‑factor authentication.
@@ -83,3 +86,5 @@ Clone the repository:
 ```bash
 git clone https://github.com/ernies-Organization/Open-Pass-Vault-.git
 cd Open-Pass-Vault-
+
+ 
